@@ -1,0 +1,10 @@
+// 35th fibonacci number is: 9227465
+
+let fib = def(x) {
+  if (x < 2) {
+    return x;
+  }
+  return fib(x - 1) + fib(x - 2);
+}
+
+print("35th fibonacci number is: ", fibonacci(35))

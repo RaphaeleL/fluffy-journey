@@ -1,0 +1,15 @@
+// 35th fibonacci number is: 9227465
+
+let fib = def(n) {
+  let a = 0;
+  let b = 1;
+  let c = a + b;
+  for (let i=2; i < n; i++) {
+    a = b;
+    b = c;
+    c = a + b;
+  }
+  return c;
+}
+
+print("35th fibonacci number is: ", fibonacci(35));

@@ -1,0 +1,20 @@
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+let sort = fn(arr) {
+  for (let i=0; i < len(arr); i++) {
+    let min = i;
+    for (let j=i+1; j < len(arr); j++) {
+      if (arr[j] < arr[min]) {
+        min = j;
+      }
+    }
+    let tmp = arr[i];
+    arr[i] = arr[min];
+    arr[min] = tmp;
+  }
+  return arr;
+};
+
+let arr = [ 5, 2, 3, 9, 1, 0, 4, 6, 8, 7];
+print("pre:  ", arr);
+print("post: ", sort(arr));
