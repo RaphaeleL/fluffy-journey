@@ -1,0 +1,6 @@
+let input = file_get_contents("examples/example_input.txt");
+input = str_split(input, "\n");
+
+for (let i=0; i < len(input); i++) {
+  print(input[i]);
+}
