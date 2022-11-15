@@ -57,7 +57,7 @@ static int run_script(const char *filename) {
 }
 
 int main(int argc, char *argv[]) {
-  if (strcmp(argv[1], "--version") == 0) {
+  if (argc < 2 || strcmp(argv[1], "--version") == 0) {
     print_version();
     return 0;
   }
