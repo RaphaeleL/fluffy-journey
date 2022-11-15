@@ -1,6 +1,6 @@
 // 35th fibonacci number is: 9227465
 
-let fib = def(n) {
+let fib = fn(n) {
   let a = 0;
   let b = 1;
   let c = a + b;
@@ -12,4 +12,4 @@ let fib = def(n) {
   return c;
 }
 
-print("35th fibonacci number is: ", fibonacci(35));
+print("35th fibonacci number is: ", fib(35));
